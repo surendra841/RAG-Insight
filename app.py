@@ -11,10 +11,6 @@ from langchain_groq import ChatGroq
 # --- Page Config ---
 st.set_page_config(page_title="RAG Lens", layout="wide")
 
-# --- UI Header ---
-st.title("RAG Insight: Chunking & Retrieval Visualizer")
-st.subheader("Advanced Retrieval Observability & Hallucination Guard")
-
 # --- 1. API & Secrets Management ---
 # Try to get key from Streamlit Secrets (Private)
 default_key = st.secrets.get("GROQ_API_KEY", "")
@@ -47,8 +43,8 @@ with st.sidebar:
     st.caption("Uses a second LLM pass to verify facts against context.")
 
 # --- 2. Title & Onboarding ---
-st.title("🔍 RAG Lens")
-st.markdown("### Advanced Retrieval Observability & Debugging Suite")
+st.title("RAG Insight: Chunking & Retrieval Visualizer")
+st.subheader("Advanced Retrieval Observability & Hallucination Guard")
 
 # --- 3. Document Loading (Upload or Default) ---
 uploaded_file = st.file_uploader("Upload a Technical PDF", type="pdf")
