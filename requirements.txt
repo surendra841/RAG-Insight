@@ -6,4 +6,5 @@ langchain-huggingface
 langchain-experimental
 pypdf
 faiss-cpu
+sentence-transformers
 pandas
